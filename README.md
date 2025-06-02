@@ -1,8 +1,6 @@
 # GoodThought NGO
 
-GoodThought NGO has been a catalyst for positive change, focusing its efforts on education, healthcare, and sustainable development to make a significant difference in communities worldwide. With this mission, GoodThought has orchestrated an array of assignments aimed at uplifting underprivileged populations and fostering long-term growth.
-
-In this project, I explored how data-driven insights can direct and enhance these humanitarian efforts by engaging with the GoodThought PostgreSQL database, which encapsulates detailed records of assignments, funding, impacts, and donor activities from 2010 to 2023. This comprehensive dataset includes:
+This comprehensive dataset includes:
 
 ## Dataset Overview
 
