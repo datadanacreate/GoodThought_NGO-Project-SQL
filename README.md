@@ -10,6 +10,8 @@ This comprehensive dataset includes the following three tables:
 | **Donations**   | Records of financial contributions, linked to specific donors and assignments, highlighting how financial support is allocated and utilized. |
 | **Donors**      | Information on individuals and organizations that fund GoodThought’s projects, including donor types.              |
 
+![ERD Diagram](images/GoodThought_ERD.png)
+
 ## Code
 
 ```sql
