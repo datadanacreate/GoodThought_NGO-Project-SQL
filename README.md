@@ -1,8 +1,8 @@
-# GoodThought NGO
+# 👐 GoodThought NGO Data Analysis
 
-This comprehensive dataset includes the following three tables:
+Analyze donation impact and project effectiveness to empower GoodThought NGO's mission with actionable insights.
 
-## Dataset Overview
+## 📊 Dataset Overview
 
 | Dataset    | Description                                                                                                           |
 |------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -10,9 +10,14 @@ This comprehensive dataset includes the following three tables:
 | **Donations**   | Records of financial contributions, linked to specific donors and assignments, highlighting how financial support is allocated and utilized. |
 | **Donors**      | Information on individuals and organizations that fund GoodThought’s projects, including donor types.              |
 
-![ERD Diagram](images/GoodThought_ERD.png)
+🔗 Entity Relationship Diagram (ERD)
 
-## Code
+## Visualize how the main tables relate within the database schema.
+
+<p align="center"> <img src="images/GoodThought_ERD.png" alt="Entity Relationship Diagram" width="600" /> </p>
+
+## 💻 SQL Code Samples
+
 
 ```sql
 -- Calculate total donation amounts by assignment and donor type,
@@ -100,7 +105,7 @@ ORDER BY region;
 | 3     | Assignment_2794 | West   |         9.99 |               2 |
 
 
-## Summary
+## 📝 Summary
 
 Leveraged SQL CTEs, joins, aggregation, and window functions to analyze donation data.
 Identified the top assignments by donation amount and donor type.
