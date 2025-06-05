@@ -12,8 +12,6 @@ This comprehensive dataset includes:
 
 ## Code
 
-## Code
-
 ```sql
 -- Calculate total donation amounts by assignment and donor type,
 -- rounding amounts to 2 decimal places
@@ -43,7 +41,7 @@ JOIN
 ORDER BY
     dd.rounded_total_donation_amount DESC
 LIMIT 5;
-
+```
 
 ## Top 5 Assignments by Donation Amount and Donor Type
 
@@ -55,6 +53,7 @@ LIMIT 5;
 | 3     | Assignment_1765 | West   |                     2,626.98 | Organization |
 | 4     | Assignment_268  | East   |                     2,488.69 | Individual   |
 
+```sql
 
 -- Calculate total number of donations per assignment
 WITH donation_info AS (
@@ -87,7 +86,7 @@ SELECT
 FROM assignment_rank
 WHERE rank_in_region = 1
 ORDER BY region;
-
+```
 
 ## Top Impact Assignments by Region (With Donations)
 
@@ -97,4 +96,12 @@ ORDER BY region;
 | 1     | Assignment_2253 | North  |         9.99 |               1 |
 | 2     | Assignment_3547 | South  |          10  |               1 |
 | 3     | Assignment_2794 | West   |         9.99 |               2 |
+
+
+## Summary
+
+Leveraged SQL CTEs, joins, aggregation, and window functions to analyze donation data.
+Identified the top assignments by donation amount and donor type.
+Ranked assignments by impact score regionally while considering only those with donations.
+Provided clear and actionable insights to support GoodThought NGO's mission strategy.
 
