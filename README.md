@@ -1,6 +1,6 @@
 # GoodThought NGO
 
-This comprehensive dataset includes:
+This comprehensive dataset includes the following three tables:
 
 ## Dataset Overview
 
