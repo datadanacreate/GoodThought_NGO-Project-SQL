@@ -12,6 +12,9 @@ This comprehensive dataset includes:
 
 ## Code
 
+## Code
+
+```sql
 -- Calculate total donation amounts by assignment and donor type,
 -- rounding amounts to 2 decimal places
 WITH donation_details AS (
@@ -41,6 +44,7 @@ ORDER BY
     dd.rounded_total_donation_amount DESC
 LIMIT 5;
 
+
 ## Top 5 Assignments by Donation Amount and Donor Type
 
 | Index | Assignment Name | Region | Total Donation Amount (USD) | Donor Type   |
@@ -52,7 +56,7 @@ LIMIT 5;
 | 4     | Assignment_268  | East   |                     2,488.69 | Individual   |
 
 
---Calculate total number of donations per assignment
+-- Calculate total number of donations per assignment
 WITH donation_info AS (
     SELECT 
         assignment_id, 
@@ -61,7 +65,7 @@ WITH donation_info AS (
     GROUP BY assignment_id
 ),
 
---Rank assignments by impact score within each region, including only assignments with at least one donation
+-- Rank assignments by impact score within each region, including only assignments with at least one donation
 assignment_rank AS (
     SELECT 
         a.assignment_name, 
@@ -74,7 +78,7 @@ assignment_rank AS (
     WHERE di.num_total_donations >= 1
 )
 
---Select top-ranked assignment by impact score in each region
+-- Select top-ranked assignment by impact score in each region
 SELECT 
     assignment_name, 
     region, 
@@ -83,6 +87,7 @@ SELECT
 FROM assignment_rank
 WHERE rank_in_region = 1
 ORDER BY region;
+
 
 ## Top Impact Assignments by Region (With Donations)
 
